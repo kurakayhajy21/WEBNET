@@ -36,11 +36,11 @@ const SITES = [
   ,
   {
     id: 4,
-    name: "Site 04",
-    area: "Ankawa",
-    contactName: "Customer Name",
-    phone: "0750 000 0000",
-    locationUrl: "https://www.google.com/maps",
+    name: "kabab najar",
+    area: "32 park",
+    contactName: "isam",
+    phone: "0750 432 2553",
+    locationUrl: "https://maps.app.goo.gl/vtfXYexT6tdcPhDQ6",
     note: ""
   }
 ];
