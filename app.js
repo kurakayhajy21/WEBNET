@@ -26,11 +26,11 @@ const SITES = [
   },
   {
     id: 3,
-    name: "Site 03",
-    area: "Sami Abdulrahman Park",
-    contactName: "Customer Name",
-    phone: "0750 000 0000",
-    locationUrl: "https://www.google.com/maps",
+    name: "white base",
+    area: "Timar",
+    contactName: "muhemmed",
+    phone: "0751 821 1353",
+    locationUrl: "https://maps.app.goo.gl/WrYqvbBLz3marzRw9",
     note: ""
   }
   ,
