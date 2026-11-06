@@ -11,36 +11,36 @@ const SITES = [
     name: "Hawler School 2",
     area: "Bnaslawa",
     contactName: "Shakar",
-    phone: "0750 190 4780",
-    locationUrl: "https://maps.app.goo.gl/9jGWKzcujzDDjeSy5",
+    phone: "0750 000 0000",
+    locationUrl: "https://www.google.com/maps",
     note: ""
   },
   {
     id: 2,
-    name: "london Crown ",
-    area: "5 hasarok",
-    contactName: "Ahmed",
-    phone: "0750 797 8569",
-    locationUrl: "https://maps.app.goo.gl/KmtpZ3hfXqrAz74a8",
+    name: "Site 02",
+    area: "Ankawa",
+    contactName: "Customer Name",
+    phone: "0750 000 0000",
+    locationUrl: "https://www.google.com/maps",
     note: ""
   },
   {
     id: 3,
-    name: "white base",
-    area: "Timar",
-    contactName: "muhemmed",
-    phone: "0751 821 1353",
-    locationUrl: "https://maps.app.goo.gl/WrYqvbBLz3marzRw9",
+    name: "Site 03",
+    area: "Sami Abdulrahman Park",
+    contactName: "Customer Name",
+    phone: "0750 000 0000",
+    locationUrl: "https://www.google.com/maps",
     note: ""
   }
   ,
   {
     id: 4,
-    name: "kabab najar",
-    area: "32 park",
-    contactName: "isam",
-    phone: "0750 432 2553",
-    locationUrl: "https://maps.app.goo.gl/vtfXYexT6tdcPhDQ6",
+    name: "Site 04",
+    area: "Ankawa",
+    contactName: "Customer Name",
+    phone: "0750 000 0000",
+    locationUrl: "https://www.google.com/maps",
     note: ""
   }
 ];
@@ -132,4 +132,4 @@ setTimeout(() => {
   document.body.classList.remove("loading");
   splash.classList.add("done");
   setTimeout(() => splash.remove(), 600);
-}, 1000);
+}, 5000);
