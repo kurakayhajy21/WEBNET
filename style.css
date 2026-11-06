@@ -93,8 +93,17 @@ footer { min-height:72px; background:linear-gradient(100deg,var(--navy),var(--bl
 .splash.done { opacity:0; visibility:hidden; }
 .splash-logo { width:min(420px,72vw); height:auto; animation:splash-in .9s ease-out both; }
 .splash-bar { width:min(220px,50vw); height:4px; border-radius:4px; background:var(--line); overflow:hidden; }
-.splash-bar span { display:block; height:100%; width:100%; background:linear-gradient(90deg,var(--navy),var(--blue-bright)); transform-origin:left; animation:splash-fill 5s linear both; }
+.splash-bar span { display:block; height:100%; width:100%; background:linear-gradient(90deg,var(--navy),var(--blue-bright)); transform-origin:left; animation:splash-fill 2s linear both; }
 body.loading { overflow:hidden; }
 @keyframes splash-in { from { opacity:0; transform:scale(.94); } to { opacity:1; transform:none; } }
 @keyframes splash-fill { from { transform:scaleX(0); } to { transform:scaleX(1); } }
 @media (prefers-reduced-motion: reduce) { .splash-logo { animation:none; } }
+
+/* Details open under the clicked site (no side panel) */
+.inline-mode .layout { grid-template-columns: minmax(0,1fr); }
+.inline-mode .details-panel { display:none; }
+.site-inline { grid-column:1 / -1; border:1px solid var(--line); border-radius:16px; background:#fff; overflow:hidden; box-shadow:0 8px 24px #0b4a9014; animation:inline-open .25s ease; }
+.inline-head { display:flex; justify-content:space-between; align-items:center; padding:14px 20px; color:#fff; background:linear-gradient(100deg,var(--blue-bright),var(--navy)); font-weight:700; }
+.inline-close { background:transparent; border:0; color:#fff; font-size:26px; line-height:1; cursor:pointer; padding:0 4px; }
+.site-card .card-arrow { font-size:22px; }
+@keyframes inline-open { from { opacity:0; transform:translateY(-6px); } to { opacity:1; transform:none; } }

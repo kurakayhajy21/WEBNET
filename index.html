@@ -65,6 +65,20 @@
     <span id="footer-company">Web Net</span>
     <span class="footer-right">SITE LOCATION DIRECTORY</span>
   </footer>
-  <script src="app.js"></script>
+  <script>
+    /* Splash logo: shown for 2 seconds */
+    setTimeout(function () {
+      document.body.classList.remove("loading");
+      var sp = document.getElementById("splash");
+      if (sp) sp.classList.add("done");
+    }, 2000);
+    /* Always fetch the newest files (so phones never show an old copy) */
+    ["app.js", "details-inline.js"].forEach(function (f) {
+      var s = document.createElement("script");
+      s.src = f + "?t=" + Date.now();
+      s.async = false; /* keep the order */
+      document.body.appendChild(s);
+    });
+  </script>
 </body>
 </html>
