@@ -132,4 +132,4 @@ setTimeout(() => {
   document.body.classList.remove("loading");
   splash.classList.add("done");
   setTimeout(() => splash.remove(), 600);
-}, 5000);
+}, 1000);
